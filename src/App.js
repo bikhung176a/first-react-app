@@ -1,25 +1,20 @@
 import logo from "./logo.svg";
 import "./App.css";
-import Hello from "./hello.js";
+import { Navbar, NavbarBrand } from "reactstrap";
+import React from "react";
 
-function formatName(user) {
-  return user.firstName + " " + user.lastName;
-}
-
-const user = {
-  firstName: "Happer",
-  lastName: "Perez",
-};
-
-function App() {
-  const name = "";
-  const element = "Hello," + formatName(user);
-
-  return (
-    <div className="App">
-      <h1>{Hello} </h1>
-    </div>
-  );
+class App extends React.Component {
+  render() {
+    return (
+      <div className="App">
+        <Navbar dark color="primary">
+          <div className="container">
+            <NavbarBrand href="/">Ristorante Con Fusion </NavbarBrand>
+          </div>
+        </Navbar>
+      </div>
+    );
+  }
 }
 
 export default App;

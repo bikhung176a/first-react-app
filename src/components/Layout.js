@@ -19,6 +19,11 @@ function Layout(props) {
             Contact
           </NavLink>
         </li>
+        <li>
+          <NavLink to="/Profile/1/VanTTN" activeStyle={{ color: "red" }}>
+            Profile
+          </NavLink>
+        </li>
       </ul>
     </nav>
   );
